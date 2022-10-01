@@ -40,3 +40,9 @@
         width: 100%;
     }
 }
+@media (max-width: 400px) {
+    .facebook-contatos, .instagram-contatos, .linkedin-contatos, .github-contatos, .whatsapp-contatos, .email-contatos{
+        width: 100%;
+        font-size: 24px;
+    }
+}

@@ -114,7 +114,8 @@ a{
 @media (max-width: 810px) {
     .direita{
         width: inherit;
-        margin: 0 10%;
+        margin: 0;
+        background-size: 100% 100%;
     }
     @keyframes steps {
         from{
@@ -124,15 +125,38 @@ a{
         }
     }
 }
-@media (max-width: 550px) {
-    .direita{
-        margin-left: -10%;
+@media (max-width: 500px) {
+    .logo{
+        animation: none;
+        overflow: visible;
+        font-size: 20px;
     }
-    @keyframes steps {
-        from{
-            width: 0;
-        }to{
-            width: 95px;
-        }
+    #logo{
+        text-align: center;
+        padding: 10px;
+    }
+    .esquerda{
+        background: no-repeat center / cover;
+    }
+    header{
+        display: block;
+        height: 50vh;
+        border-radius:0;
+    }
+    .lista{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        gap: 1rem;
+        margin-top: 30px;
+    }
+    .direita{
+        background-size: 130%;
+        margin: 0 auto;
+        margin-left: -50px;
+    }
+    .rodape{
+        width: inherit;
     }
 }

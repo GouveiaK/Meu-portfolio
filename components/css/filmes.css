@@ -38,3 +38,20 @@
 
     }
 }
+@media (max-width: 600px) {
+    .filmes{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 400px) {
+    .filmes img{
+        width: 100px;
+        height: 150px;
+    }
+    .filmes{
+        transform: scale(.7);
+    }
+    .filmes:hover{
+        transform: scale(.8);
+    }
+}
