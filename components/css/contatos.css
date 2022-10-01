@@ -35,3 +35,8 @@
 .facebook-contatos:hover, .instagram-contatos:hover, .linkedin-contatos:hover, .github-contatos:hover, .whatsapp-contatos:hover, .email-contatos:hover{
     transform: scale(.9);
 }
+@media (max-width: 1310px) {
+    .facebook-contatos, .instagram-contatos, .linkedin-contatos, .github-contatos, .whatsapp-contatos, .email-contatos{
+        width: 100%;
+    }
+}

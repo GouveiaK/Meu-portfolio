@@ -5,10 +5,10 @@ async function Api(dados){
     const api = await fetch(`${base}${dados}`)
     .then(response => response.json())
         .then((data)=>{
-            document.querySelector('#titulo0').innerHTML = data.results[0].original_title;
-            document.querySelector('#capa0').src = `https://image.tmdb.org/t/p/original${data.results[0].poster_path}`;
+            document.querySelector('#titulo0').innerHTML = data.results[17].original_title;
+            document.querySelector('#capa0').src = `https://image.tmdb.org/t/p/original${data.results[17].poster_path}`;
 
-            document.querySelector('#titulo1').innerHTML = data.results[1].original_title;
+            document.querySelector('#titulo1').innerHTML = data.results[1].title;
             document.querySelector('#capa1').src = `https://image.tmdb.org/t/p/original${data.results[1].poster_path}`;
 
             document.querySelector('#titulo2').innerHTML = data.results[2].original_title;
@@ -20,7 +20,7 @@ async function Api(dados){
             document.querySelector('#titulo4').innerHTML = data.results[4].original_title;
             document.querySelector('#capa4').src = `https://image.tmdb.org/t/p/original${data.results[4].poster_path}`;
 
-            document.querySelector('#titulo5').innerHTML = data.results[5].original_name;
+            document.querySelector('#titulo5').innerHTML = data.results[5].name;
             document.querySelector('#capa5').src = `https://image.tmdb.org/t/p/original${data.results[5].poster_path}`;
 
             document.querySelector('#titulo6').innerHTML = data.results[6].original_title;
@@ -52,6 +52,7 @@ async function Api(dados){
 
             document.querySelector('#titulo15').innerHTML = data.results[15].original_title;
             document.querySelector('#capa15').src = `https://image.tmdb.org/t/p/original${data.results[15].poster_path}`;
+            console.log(data.results)
         })
 }
 Api(`trending/all/day?api_key=${key}&language=pt-BR`);

@@ -3,3 +3,9 @@
     text-align: justify;
     font-size: 30px;
 }
+@media (max-width: 1180px) {
+    .celular p{
+        font-size: 25px;
+        margin-top: 70px;
+    }
+}

@@ -32,3 +32,9 @@
     word-wrap: break-word;
     width: 150px;
 }
+@media (max-width: 1310px) {
+    #projetos{
+        height: auto;
+
+    }
+}

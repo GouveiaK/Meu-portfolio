@@ -88,3 +88,51 @@ a{
     display: flex;
     align-items: center;
 }
+@media (max-width: 1180px) {
+    body{
+        display: block;
+    }
+    header{
+        margin: 0;
+        background-color: black;
+    }
+    .lista li{
+        font-size: 14px;
+    }
+    .direita{
+        width: 50vw;
+        margin: 0 auto;
+    }
+    @keyframes steps {
+        from{
+            width: 0;
+        }to{
+            width: 210px;
+        }
+    }
+}
+@media (max-width: 810px) {
+    .direita{
+        width: inherit;
+        margin: 0 10%;
+    }
+    @keyframes steps {
+        from{
+            width: 0;
+        }to{
+            width: 150px;
+        }
+    }
+}
+@media (max-width: 550px) {
+    .direita{
+        margin-left: -10%;
+    }
+    @keyframes steps {
+        from{
+            width: 0;
+        }to{
+            width: 95px;
+        }
+    }
+}
