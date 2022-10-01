@@ -1,0 +1,37 @@
+#contatos{
+    height: 90vh;
+}
+.facebook-contatos, .instagram-contatos, .linkedin-contatos, .github-contatos, .whatsapp-contatos, .email-contatos{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    width: 50%;
+    overflow: hidden;
+    transform: scale(.8);
+    padding: 20px;
+    font-size: 30px;
+}
+.facebook-contatos{
+    background-color: #3b5998;
+}
+.instagram-contatos{
+    background-color: brown;
+}
+.linkedin-contatos{
+    background-color: #0e76a8;
+}
+.github-contatos{
+    background-color: #171515;
+}
+.github-contatos i{
+    color: white;
+}
+.whatsapp-contatos{
+    background-color: #39c640;
+}
+.email-contatos{
+    background-color: rgb(150, 15, 15);
+}
+.facebook-contatos:hover, .instagram-contatos:hover, .linkedin-contatos:hover, .github-contatos:hover, .whatsapp-contatos:hover, .email-contatos:hover{
+    transform: scale(.9);
+}
