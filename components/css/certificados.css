@@ -1,0 +1,35 @@
+#certificados{
+    height: 100vh;
+}
+.certificados{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 10px;
+    height: 90vh;
+    overflow: auto;
+    justify-content: center;
+}
+.certificado-foto img{
+    width: 736px;
+    height: 563px;
+    padding: 10px;
+}
+@media (max-width: 900px) {
+    .certificado-foto img{
+        width: 536px;
+        height: 363px;
+    }
+}
+@media (max-width: 570px) {
+    .certificado-foto img{
+        width: 380px;
+        height: 270px;
+    }
+}
+@media (max-width: 400px) {
+    .certificado-foto img{
+        width: 280px;
+        height: 220px;
+    }
+}
