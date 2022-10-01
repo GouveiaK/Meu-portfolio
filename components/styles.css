@@ -157,6 +157,8 @@ a{
         margin-left: -50px;
     }
     .rodape{
+        font-size: 12px;
         width: inherit;
+        padding: 10px;
     }
 }
